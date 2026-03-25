@@ -65,7 +65,7 @@ async def chat_endpoint(request: Request):
     try:
         # try Gemini first
         response = client.models.generate_content(
-            model="gemini-1.5-flash-latest",
+            model="gemini-2.0-flash",
             contents=chat_history
         )
         bot_reply = response.text
